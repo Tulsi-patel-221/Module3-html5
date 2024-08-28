@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         body {
+            margin: 0;
+            background-color: black;
+            color: #FFD700; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #ccc;
+            padding: 15px;
+            font-size: 20px;
+            gap: 60px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .navbar a {
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .video-container {
+            margin-top: 20px;
+            
+        }
+
+        .video-container>h1{
+            padding: 20px;
+            font-size: 50px;
+        }
+        video {
+            width: 750px;
+            height: 380px;
+        }
+
+    
+        .audio-player {
+            margin-top: 50px;
+            display: inline-block;
+            border-radius: 25px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+        audio {
+            width: 300px;
+            outline: none;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Apple</a>
+        <a href="#">Yahoo!</a>
+        <a href="#">Google Maps</a>
+        <a href="#">YouTube</a>
+        <a href="#">Wikipedia</a>
+        <a href="#">News (492)</a>
+        <a href="#">Popular</a>
+    </div>
+
+    <div class="video-container">
+        <h1>HTML5 VIDEO</h1>
+        
+           <video src= "https://youtu.be/UHLAWPlTjWg?si=OGB1EVLydrhIK6WB" controls></video>
+        
+    </div>
+
+     <h1>HTML5 Audio Player</h1>
+    <div class="audio-player">
+        <audio  src="your-audio-file.mp3" controls>
+        </audio>    
+    </div>
+</body>
+</html>
